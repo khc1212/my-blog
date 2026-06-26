@@ -94,6 +94,7 @@ export default defineConfig({
             collapsed: true,
             items: [
               { text: '计算机网络', link: '/计算机网络' },
+              { text: 'MQTT 协议', link: '/MQTT协议基础' },
               { text: '多进程与多线程', link: '/多进程，多线程' },
               { text: '找单独的数', link: '/找单独的数' }
             ]
