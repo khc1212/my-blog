@@ -1,4 +1,4 @@
-# 本地部署 Qwen 3：用 Ollama 跑 RAG 和 AI 代理的折腾记录
+# Qwen 3 本地部署与 RAG 实践
 
 最近 AI 这块最让我兴奋的一个趋势，就是能在自己电脑上直接跑大模型了。不用依赖云端的 API，数据不用往外传，也不用担心按 Token 付费，而且没网也能用。对咱们开发者来说，这玩意儿太香了。
 
@@ -94,7 +94,7 @@ pip install langchain langchain-community langchain-core langchain-ollama chroma
 
 本地环境搭起来涉及好几个组件：Ollama 本身、Qwen 3 模型权重、Python 环境、LangChain 和 ChromaDB 这些库。这玩意儿好处是灵活，哪个组件都能换，坏处就是一开始得花点心思配置。下面我尽量把步骤写清楚，减少踩坑。
 
-## 用 Qwen 3 搭建本地 RAG 系统
+## Qwen 3 本地部署与 RAG 实践
 
 RAG（检索增强生成）是个很实用的技术：LLM 不光是靠自己的训练数据来回答，还能从你指定的文档集（比如本地的 PDF）里检索相关信息，再根据这些信息回答问题。这样能大大减少"幻觉"，也能让 LLM 回答关于你私有数据的问题，不用重新训练。
 

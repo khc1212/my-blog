@@ -17,13 +17,16 @@ export default defineConfig({
         text: '文章',
         items: [
           { text: 'AI 探索', items: [
-            { text: 'Qwen 3 本地部署', link: '/本地部署 Qwen 3：用 Ollama 跑 RAG 和 AI 代理的折腾记录' },
+            { text: 'Qwen 3 本地部署与 RAG', link: '/Qwen 3 本地部署与 RAG 实践' },
             { text: '生成式AI学习笔记', link: '/边学边做：生成式AI应用学习笔记' }
           ]},
           { text: '学习笔记', items: [
             { text: 'Docker', link: '/docker' },
             { text: 'Nginx', link: '/Nginx' },
-            { text: 'MySQL', link: '/MySql' },
+            { text: 'MySQL 基础', link: '/MySql' },
+            { text: 'MySQL 索引', link: '/mysql索引' },
+            { text: 'MySQL 日志', link: '/mysql日志' },
+            { text: 'MySQL 锁', link: '/mysql锁' },
             { text: 'DRF', link: '/DRF' },
             { text: 'PyTorch', link: '/pytorch' },
             { text: 'STM32 学习笔记', link: '/Stm32学习笔记' }
@@ -35,7 +38,7 @@ export default defineConfig({
       {
         text: '🤖 AI 探索',
         items: [
-          { text: 'Qwen 3 本地部署', link: '/本地部署 Qwen 3：用 Ollama 跑 RAG 和 AI 代理的折腾记录' },
+          { text: 'Qwen 3 本地部署与 RAG', link: '/Qwen 3 本地部署与 RAG 实践' },
           { text: '生成式AI学习笔记', link: '/边学边做：生成式AI应用学习笔记' }
         ]
       },
@@ -49,7 +52,16 @@ export default defineConfig({
             items: [
               { text: 'Docker', link: '/docker' },
               { text: 'Nginx', link: '/Nginx' },
-              { text: 'MySQL', link: '/MySql' }
+              {
+                text: 'MySQL',
+                collapsed: true,
+                items: [
+                  { text: '基础', link: '/MySql' },
+                  { text: '索引', link: '/mysql索引' },
+                  { text: '日志', link: '/mysql日志' },
+                  { text: '锁', link: '/mysql锁' }
+                ]
+              }
             ]
           },
           {

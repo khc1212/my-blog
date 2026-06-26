@@ -189,6 +189,16 @@
   color: var(--vp-c-text-3) !important;
 }
 
+/* level-3 MySQL 子项 */
+.VPSidebarItem.level-3 {
+  padding-left: 8px !important;
+}
+
+.VPSidebarItem.level-3 .text {
+  font-size: 12px !important;
+  color: var(--vp-c-text-3) !important;
+}
+
 /* ==================== CONTENT ==================== */
 .vp-doc h1 {
   font-size: 32px !important;
