@@ -1,0 +1,291 @@
+:root {
+  --vp-c-brand-1: #3451b2;
+  --vp-c-brand-2: #3a5ccc;
+  --vp-c-brand-3: #5473e7;
+  --vp-c-brand-soft: rgba(100, 108, 255, 0.14);
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #bd34fe 30%, #41d1ff);
+  --vp-home-hero-image-background-image: linear-gradient(-45deg, #bd34fe 50%, #47d1ff 50%);
+  --vp-home-hero-image-filter: blur(44px);
+}
+
+.dark {
+  --vp-c-brand-1: #a1b1f9;
+  --vp-c-brand-2: #7988f2;
+  --vp-c-brand-3: #5473e7;
+}
+
+/* Hero section */
+.VPHero .VPImage {
+  border-radius: 50%;
+}
+
+.VPHero .name {
+  font-size: 56px !important;
+  font-weight: 800 !important;
+  letter-spacing: -1px;
+}
+
+.VPHero .text {
+  font-size: 24px !important;
+  color: var(--vp-c-text-2);
+}
+
+.VPHero .tagline {
+  font-size: 18px !important;
+  line-height: 1.6;
+  color: var(--vp-c-text-3);
+}
+
+/* Hero actions */
+.VPHero .VPButton.brand {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: none;
+  padding: 12px 32px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+.VPHero .VPButton.brand:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+}
+
+.VPHero .VPButton.alt {
+  border-radius: 8px;
+  padding: 12px 32px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.VPHero .VPButton.alt:hover {
+  transform: translateY(-2px);
+}
+
+/* Feature cards */
+.VPFeature {
+  border-radius: 12px !important;
+  border: 1px solid var(--vp-c-border) !important;
+  background: var(--vp-c-bg-soft) !important;
+  padding: 24px !important;
+  transition: all 0.3s ease !important;
+}
+
+.VPFeature:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  border-color: var(--vp-c-brand-1) !important;
+}
+
+.VPFeature .title {
+  font-size: 18px !important;
+  font-weight: 700 !important;
+  margin-bottom: 8px !important;
+}
+
+.VPFeature .details {
+  font-size: 14px !important;
+  line-height: 1.7 !important;
+  color: var(--vp-c-text-2) !important;
+}
+
+/* Sidebar */
+.VPSidebar .group .title {
+  font-weight: 700 !important;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 12px !important;
+}
+
+.VPSidebar .item {
+  border-radius: 8px !important;
+  transition: all 0.2s ease !important;
+  padding: 6px 12px !important;
+}
+
+.VPSidebar .item:hover {
+  background: var(--vp-c-brand-soft) !important;
+}
+
+.VPSidebar .item.is-active {
+  background: var(--vp-c-brand-soft) !important;
+  color: var(--vp-c-brand-1) !important;
+  font-weight: 600 !important;
+}
+
+/* Content area */
+.vp-doc h1 {
+  font-size: 32px !important;
+  font-weight: 800 !important;
+  margin-bottom: 24px !important;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.vp-doc h2 {
+  font-size: 24px !important;
+  font-weight: 700 !important;
+  margin-top: 40px !important;
+  padding-bottom: 12px !important;
+  border-bottom: 2px solid var(--vp-c-brand-soft) !important;
+}
+
+.vp-doc h3 {
+  font-size: 20px !important;
+  font-weight: 600 !important;
+  margin-top: 32px !important;
+}
+
+/* Code blocks */
+.vp-doc div[class*='language-'] {
+  border-radius: 12px !important;
+  border: 1px solid var(--vp-c-border) !important;
+  margin: 16px 0 !important;
+}
+
+.vp-doc div[class*='language-'] pre {
+  padding: 20px !important;
+}
+
+/* Inline code */
+.vp-doc :not(pre) > code {
+  background: var(--vp-c-brand-soft) !important;
+  color: var(--vp-c-brand-1) !important;
+  padding: 2px 8px !important;
+  border-radius: 6px !important;
+  font-weight: 500 !important;
+  font-size: 0.9em !important;
+}
+
+/* Blockquote */
+.vp-doc blockquote {
+  border-left: 4px solid var(--vp-c-brand-1) !important;
+  background: var(--vp-c-bg-soft) !important;
+  border-radius: 0 8px 8px 0 !important;
+  padding: 16px 20px !important;
+  margin: 16px 0 !important;
+}
+
+/* Links */
+.vp-doc a {
+  color: var(--vp-c-brand-1) !important;
+  text-decoration: none !important;
+  border-bottom: 1px solid transparent;
+  transition: all 0.2s ease !important;
+}
+
+.vp-doc a:hover {
+  border-bottom-color: var(--vp-c-brand-1) !important;
+}
+
+/* Images */
+.vp-doc img {
+  border-radius: 12px !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08) !important;
+  margin: 16px 0 !important;
+  transition: transform 0.3s ease !important;
+}
+
+.vp-doc img:hover {
+  transform: scale(1.02);
+}
+
+/* Table */
+.vp-doc table {
+  border-radius: 12px !important;
+  overflow: hidden !important;
+  border: 1px solid var(--vp-c-border) !important;
+}
+
+.vp-doc th {
+  background: var(--vp-c-brand-soft) !important;
+  font-weight: 700 !important;
+}
+
+/* Navbar */
+.VPNavBar .title {
+  font-weight: 800 !important;
+  font-size: 18px !important;
+}
+
+/* Navigation bar brand */
+.VPNavBarTitle .title-text {
+  font-weight: 800 !important;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Page nav (prev/next) */
+.VPDocFooter .pager {
+  border-radius: 8px !important;
+  transition: all 0.2s ease !important;
+}
+
+.VPDocFooter .pager:hover {
+  background: var(--vp-c-brand-soft) !important;
+}
+
+/* Footer */
+.VPFooter {
+  border-top: 1px solid var(--vp-c-border) !important;
+}
+
+/* Outline (right side TOC) */
+.VPDocOutlineItem .outline-link {
+  border-radius: 6px !important;
+  transition: all 0.2s ease !important;
+}
+
+.VPDocOutlineItem .outline-link.active {
+  background: var(--vp-c-brand-soft) !important;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--vp-c-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--vp-c-divider);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--vp-c-text-3);
+}
+
+/* Tip/Warning/Danger containers */
+.vp-doc .custom-block {
+  border-radius: 12px !important;
+  padding: 16px 20px !important;
+}
+
+/* Lists */
+.vp-doc ul, .vp-doc ol {
+  padding-left: 24px !important;
+}
+
+.vp-doc li {
+  margin: 6px 0 !important;
+  line-height: 1.8 !important;
+}
+
+/* Horizontal rule */
+.vp-doc hr {
+  border: none !important;
+  height: 2px !important;
+  background: linear-gradient(90deg, transparent, var(--vp-c-brand-soft), transparent) !important;
+  margin: 32px 0 !important;
+}
