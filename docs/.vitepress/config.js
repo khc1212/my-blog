@@ -28,6 +28,12 @@ export default defineConfig({
           { text: 'AI 探索', items: [
             { text: 'Qwen 3 本地部署', link: '/本地部署 Qwen 3：用 Ollama 跑 RAG 和 AI 代理的折腾记录' },
             { text: '生成式AI学习笔记', link: '/边学边做：生成式AI应用学习笔记' }
+          ]},
+          { text: '前端开发', items: [
+            { text: 'Vue2 学习记录', link: '/vue2学习记录' }
+          ]},
+          { text: '嵌入式', items: [
+            { text: 'STM32 学习笔记', link: '/Stm32学习笔记' }
           ]}
         ]
       }
@@ -61,6 +67,24 @@ export default defineConfig({
           { text: '计算机网络', link: '/计算机网络' },
           { text: '多进程与多线程', link: '/多进程，多线程' },
           { text: '找单独的数', link: '/找单独的数' }
+        ]
+      },
+      {
+        text: '前端开发',
+        items: [
+          { text: 'Vue2 学习记录', link: '/vue2学习记录' }
+        ]
+      },
+      {
+        text: '嵌入式',
+        items: [
+          { text: 'STM32 学习笔记', link: '/Stm32学习笔记' }
+        ]
+      },
+      {
+        text: '其他',
+        items: [
+          { text: '设计模式', link: '/设计模式' }
         ]
       }
     ],
