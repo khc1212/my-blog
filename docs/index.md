@@ -17,6 +17,9 @@ hero:
       link: https://github.com/khc1212/my-blog
 
 features:
+  - icon: 🔧
+    title: 踩坑复盘
+    details: 线上问题排查实战，从现象到根因的真实记录
   - icon: 🤖
     title: AI 探索
     details: 大模型本地部署、RAG 检索增强生成、生成式 AI 应用开发

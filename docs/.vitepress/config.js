@@ -16,6 +16,13 @@ export default defineConfig({
       {
         text: '文章',
         items: [
+          { text: '踩坑复盘', items: [
+            { text: '物联网设备掉线排查', link: '/物联网设备掉线排查：MySQL慢查询引发的连锁反应' },
+            { text: 'MQTT 数据丢失排查', link: '/MQTT数据丢失排查：400台设备的ClientID冲突' },
+            { text: '数据查询 Agent 踩坑记', link: '/从零搭建数据查询Agent：LangChain踩坑到自研框架' },
+            { text: 'JSON 设备数据入库', link: '/JSON设备数据入库：从一把梭到表结构拆分' },
+            { text: '接口性能优化', link: '/接口性能优化：从2秒到200毫秒' }
+          ]},
           { text: 'AI 探索', items: [
             { text: 'Qwen 3 本地部署与 RAG', link: '/Qwen 3 本地部署与 RAG 实践' },
             { text: '生成式AI学习笔记', link: '/边学边做：生成式AI应用学习笔记' }
@@ -35,6 +42,16 @@ export default defineConfig({
       }
     ],
     sidebar: [
+      {
+        text: '🔧 踩坑复盘',
+        items: [
+          { text: '物联网设备掉线排查', link: '/物联网设备掉线排查：MySQL慢查询引发的连锁反应' },
+          { text: 'MQTT 数据丢失排查', link: '/MQTT数据丢失排查：400台设备的ClientID冲突' },
+          { text: '数据查询 Agent 踩坑记', link: '/从零搭建数据查询Agent：LangChain踩坑到自研框架' },
+          { text: 'JSON 设备数据入库', link: '/JSON设备数据入库：从一把梭到表结构拆分' },
+          { text: '接口性能优化', link: '/接口性能优化：从2秒到200毫秒' }
+        ]
+      },
       {
         text: '🤖 AI 探索',
         items: [

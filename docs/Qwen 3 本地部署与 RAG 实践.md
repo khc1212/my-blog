@@ -509,3 +509,5 @@ llm = ChatOllama(model="qwen3:8b", num_ctx=8192)
 - [LangChain](https://python.langchain.com/docs/get_started/introduction)
 - [ChromaDB](https://docs.trychroma.com/)
 - [Sentence Transformers](https://www.sbert.net/)
+
+> 本地部署 RAG 的经验后来在项目中派上了用场——用 FAISS + 本地模型搭了一套数据查询 Agent，详见 [从零搭建数据查询 Agent](/从零搭建数据查询Agent：LangChain踩坑到自研框架)。
