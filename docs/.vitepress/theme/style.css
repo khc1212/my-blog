@@ -1,89 +1,124 @@
 :root {
-  --vp-c-brand-1: #3451b2;
-  --vp-c-brand-2: #3a5ccc;
-  --vp-c-brand-3: #5473e7;
-  --vp-c-brand-soft: rgba(100, 108, 255, 0.14);
+  --vp-c-brand-1: #667eea;
+  --vp-c-brand-2: #764ba2;
+  --vp-c-brand-3: #5a67d8;
+  --vp-c-brand-soft: rgba(102, 126, 234, 0.14);
+  --vp-c-brand-dimm: rgba(102, 126, 234, 0.08);
   --vp-home-hero-name-color: transparent;
   --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #bd34fe 30%, #41d1ff);
   --vp-home-hero-image-background-image: linear-gradient(-45deg, #bd34fe 50%, #47d1ff 50%);
   --vp-home-hero-image-filter: blur(44px);
+  --vp-button-brand-border: transparent;
+  --vp-button-brand-text: #fff;
+  --vp-button-brand-bg: #667eea;
+  --vp-button-brand-hover-border: transparent;
+  --vp-button-brand-hover-text: #fff;
+  --vp-button-brand-hover-bg: #5a67d8;
+  --vp-button-brand-active-border: transparent;
+  --vp-button-brand-active-text: #fff;
+  --vp-button-brand-active-bg: #4c51bf;
+  --vp-nav-bg: rgba(255, 255, 255, 0.85);
+  --vp-nav-height: 64px;
+  --vp-sidebar-bg-color: rgba(252, 252, 253, 0.96);
 }
 
 .dark {
   --vp-c-brand-1: #a1b1f9;
   --vp-c-brand-2: #7988f2;
   --vp-c-brand-3: #5473e7;
+  --vp-c-brand-soft: rgba(161, 177, 249, 0.16);
+  --vp-nav-bg: rgba(27, 27, 31, 0.85);
+  --vp-sidebar-bg-color: rgba(27, 27, 31, 0.96);
 }
 
-/* Hero section */
-.VPHero .VPImage {
-  border-radius: 50%;
+/* ==================== NAVBAR ==================== */
+.VPNav {
+  backdrop-filter: blur(12px) saturate(180%);
+  background: var(--vp-nav-bg) !important;
+  border-bottom: 1px solid var(--vp-c-divider) !important;
 }
 
+.VPNavBarTitle .title-text {
+  font-weight: 800 !important;
+  font-size: 18px !important;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+}
+
+/* ==================== HERO ==================== */
 .VPHero .name {
   font-size: 56px !important;
   font-weight: 800 !important;
-  letter-spacing: -1px;
+  letter-spacing: -2px !important;
+  line-height: 1.1 !important;
 }
 
 .VPHero .text {
   font-size: 24px !important;
-  color: var(--vp-c-text-2);
+  font-weight: 600 !important;
+  color: var(--vp-c-text-2) !important;
+  margin-top: 8px !important;
 }
 
 .VPHero .tagline {
-  font-size: 18px !important;
-  line-height: 1.6;
-  color: var(--vp-c-text-3);
+  font-size: 16px !important;
+  line-height: 1.7 !important;
+  color: var(--vp-c-text-3) !important;
+  max-width: 500px !important;
+  margin: 0 auto !important;
 }
 
-/* Hero actions */
-.VPHero .VPButton.brand {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  border: none;
-  padding: 12px 32px;
-  border-radius: 8px;
-  font-weight: 600;
-  font-size: 16px;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+.VPHero .VPImage {
+  border-radius: 50% !important;
 }
 
-.VPHero .VPButton.brand:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+.VPHero .actions .VPButton {
+  border-radius: 8px !important;
+  padding: 12px 28px !important;
+  font-weight: 600 !important;
+  font-size: 15px !important;
+  transition: all 0.3s ease !important;
+  text-decoration: none !important;
 }
 
-.VPHero .VPButton.alt {
-  border-radius: 8px;
-  padding: 12px 32px;
-  font-weight: 600;
-  transition: all 0.3s ease;
+.VPHero .actions .VPButton.brand {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+  border: none !important;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4) !important;
 }
 
-.VPHero .VPButton.alt:hover {
-  transform: translateY(-2px);
+.VPHero .actions .VPButton.brand:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6) !important;
 }
 
-/* Feature cards */
+.VPHero .actions .VPButton.alt:hover {
+  transform: translateY(-2px) !important;
+}
+
+/* ==================== FEATURES ==================== */
 .VPFeature {
   border-radius: 12px !important;
   border: 1px solid var(--vp-c-border) !important;
   background: var(--vp-c-bg-soft) !important;
   padding: 24px !important;
   transition: all 0.3s ease !important;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04) !important;
 }
 
 .VPFeature:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  transform: translateY(-4px) !important;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1) !important;
   border-color: var(--vp-c-brand-1) !important;
 }
 
 .VPFeature .title {
-  font-size: 18px !important;
+  font-size: 16px !important;
   font-weight: 700 !important;
   margin-bottom: 8px !important;
+  line-height: 1.4 !important;
 }
 
 .VPFeature .details {
@@ -92,18 +127,27 @@
   color: var(--vp-c-text-2) !important;
 }
 
-/* Sidebar */
+.VPFeature .icon {
+  font-size: 28px !important;
+  margin-bottom: 12px !important;
+}
+
+/* ==================== SIDEBAR ==================== */
 .VPSidebar .group .title {
   font-weight: 700 !important;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  font-size: 12px !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.8px !important;
+  font-size: 11px !important;
+  color: var(--vp-c-text-3) !important;
+  padding: 12px 16px 8px !important;
 }
 
 .VPSidebar .item {
   border-radius: 8px !important;
+  margin: 1px 8px !important;
+  padding: 8px 12px !important;
   transition: all 0.2s ease !important;
-  padding: 6px 12px !important;
+  font-size: 14px !important;
 }
 
 .VPSidebar .item:hover {
@@ -116,23 +160,44 @@
   font-weight: 600 !important;
 }
 
-/* Content area */
+.VPSidebar .group + .group {
+  border-top: 1px solid var(--vp-c-divider) !important;
+  margin-top: 8px !important;
+  padding-top: 8px !important;
+}
+
+/* ==================== CONTENT ==================== */
 .vp-doc h1 {
   font-size: 32px !important;
   font-weight: 800 !important;
+  letter-spacing: -0.5px !important;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
   margin-bottom: 24px !important;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  padding-bottom: 16px !important;
+  border-bottom: 2px solid var(--vp-c-brand-soft) !important;
 }
 
 .vp-doc h2 {
   font-size: 24px !important;
   font-weight: 700 !important;
-  margin-top: 40px !important;
+  margin-top: 48px !important;
+  margin-bottom: 16px !important;
   padding-bottom: 12px !important;
-  border-bottom: 2px solid var(--vp-c-brand-soft) !important;
+  border-bottom: 1px solid var(--vp-c-divider) !important;
+}
+
+.vp-doc h2::before {
+  content: '' !important;
+  display: inline-block !important;
+  width: 4px !important;
+  height: 20px !important;
+  background: linear-gradient(180deg, #667eea, #764ba2) !important;
+  border-radius: 2px !important;
+  margin-right: 10px !important;
+  vertical-align: middle !important;
 }
 
 .vp-doc h3 {
@@ -141,138 +206,92 @@
   margin-top: 32px !important;
 }
 
-/* Code blocks */
+/* ==================== CODE BLOCKS ==================== */
 .vp-doc div[class*='language-'] {
   border-radius: 12px !important;
   border: 1px solid var(--vp-c-border) !important;
-  margin: 16px 0 !important;
+  margin: 20px 0 !important;
+  overflow: hidden !important;
 }
 
 .vp-doc div[class*='language-'] pre {
   padding: 20px !important;
+  font-size: 14px !important;
+  line-height: 1.7 !important;
 }
 
-/* Inline code */
+.vp-doc div[class*='language-'] code {
+  font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', Consolas, monospace !important;
+}
+
+/* ==================== INLINE CODE ==================== */
 .vp-doc :not(pre) > code {
   background: var(--vp-c-brand-soft) !important;
   color: var(--vp-c-brand-1) !important;
-  padding: 2px 8px !important;
+  padding: 3px 8px !important;
   border-radius: 6px !important;
   font-weight: 500 !important;
-  font-size: 0.9em !important;
+  font-size: 0.875em !important;
+  border: 1px solid transparent !important;
 }
 
-/* Blockquote */
+.dark .vp-doc :not(pre) > code {
+  border-color: rgba(161, 177, 249, 0.2) !important;
+}
+
+/* ==================== BLOCKQUOTE ==================== */
 .vp-doc blockquote {
   border-left: 4px solid var(--vp-c-brand-1) !important;
   background: var(--vp-c-bg-soft) !important;
-  border-radius: 0 8px 8px 0 !important;
+  border-radius: 0 12px 12px 0 !important;
   padding: 16px 20px !important;
-  margin: 16px 0 !important;
+  margin: 20px 0 !important;
+  color: var(--vp-c-text-2) !important;
 }
 
-/* Links */
-.vp-doc a {
-  color: var(--vp-c-brand-1) !important;
-  text-decoration: none !important;
-  border-bottom: 1px solid transparent;
-  transition: all 0.2s ease !important;
+.vp-doc blockquote p {
+  margin: 0 !important;
 }
 
-.vp-doc a:hover {
-  border-bottom-color: var(--vp-c-brand-1) !important;
-}
-
-/* Images */
+/* ==================== IMAGES ==================== */
 .vp-doc img {
   border-radius: 12px !important;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08) !important;
-  margin: 16px 0 !important;
-  transition: transform 0.3s ease !important;
+  margin: 20px 0 !important;
+  transition: all 0.3s ease !important;
+  max-width: 100% !important;
 }
 
 .vp-doc img:hover {
-  transform: scale(1.02);
+  transform: scale(1.01) !important;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12) !important;
 }
 
-/* Table */
+/* ==================== TABLE ==================== */
 .vp-doc table {
   border-radius: 12px !important;
   overflow: hidden !important;
   border: 1px solid var(--vp-c-border) !important;
+  margin: 20px 0 !important;
+  font-size: 14px !important;
 }
 
 .vp-doc th {
   background: var(--vp-c-brand-soft) !important;
   font-weight: 700 !important;
+  padding: 12px 16px !important;
 }
 
-/* Navbar */
-.VPNavBar .title {
-  font-weight: 800 !important;
-  font-size: 18px !important;
-}
-
-/* Navigation bar brand */
-.VPNavBarTitle .title-text {
-  font-weight: 800 !important;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-/* Page nav (prev/next) */
-.VPDocFooter .pager {
-  border-radius: 8px !important;
-  transition: all 0.2s ease !important;
-}
-
-.VPDocFooter .pager:hover {
-  background: var(--vp-c-brand-soft) !important;
-}
-
-/* Footer */
-.VPFooter {
+.vp-doc td {
+  padding: 10px 16px !important;
   border-top: 1px solid var(--vp-c-border) !important;
 }
 
-/* Outline (right side TOC) */
-.VPDocOutlineItem .outline-link {
-  border-radius: 6px !important;
-  transition: all 0.2s ease !important;
+.vp-doc tr:hover td {
+  background: var(--vp-c-bg-soft) !important;
 }
 
-.VPDocOutlineItem .outline-link.active {
-  background: var(--vp-c-brand-soft) !important;
-}
-
-/* Custom scrollbar */
-::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
-}
-
-::-webkit-scrollbar-track {
-  background: var(--vp-c-bg);
-}
-
-::-webkit-scrollbar-thumb {
-  background: var(--vp-c-divider);
-  border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: var(--vp-c-text-3);
-}
-
-/* Tip/Warning/Danger containers */
-.vp-doc .custom-block {
-  border-radius: 12px !important;
-  padding: 16px 20px !important;
-}
-
-/* Lists */
+/* ==================== LISTS ==================== */
 .vp-doc ul, .vp-doc ol {
   padding-left: 24px !important;
 }
@@ -282,10 +301,94 @@
   line-height: 1.8 !important;
 }
 
-/* Horizontal rule */
+.vp-doc li::marker {
+  color: var(--vp-c-brand-1) !important;
+}
+
+/* ==================== LINKS ==================== */
+.vp-doc a {
+  color: var(--vp-c-brand-1) !important;
+  text-decoration: none !important;
+  font-weight: 500 !important;
+  border-bottom: 1px solid transparent !important;
+  transition: all 0.2s ease !important;
+}
+
+.vp-doc a:hover {
+  border-bottom-color: var(--vp-c-brand-1) !important;
+}
+
+/* ==================== HORIZONTAL RULE ==================== */
 .vp-doc hr {
   border: none !important;
   height: 2px !important;
   background: linear-gradient(90deg, transparent, var(--vp-c-brand-soft), transparent) !important;
-  margin: 32px 0 !important;
+  margin: 40px 0 !important;
 }
+
+/* ==================== PAGE NAV ==================== */
+.VPDocFooter {
+  margin-top: 48px !important;
+  padding-top: 24px !important;
+  border-top: 1px solid var(--vp-c-border) !important;
+}
+
+/* ==================== SCROLLBAR ==================== */
+::-webkit-scrollbar {
+  width: 6px !important;
+  height: 6px !important;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--vp-c-divider) !important;
+  border-radius: 3px !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--vp-c-text-3) !important;
+}
+
+/* ==================== OUTLINE (TOC) ==================== */
+.VPDoc .outline .outline-link {
+  border-radius: 6px !important;
+  transition: all 0.2s ease !important;
+  font-size: 13px !important;
+}
+
+.VPDoc .outline .outline-link.active {
+  background: var(--vp-c-brand-soft) !important;
+  color: var(--vp-c-brand-1) !important;
+}
+
+/* ==================== FOOTER ==================== */
+.VPFooter {
+  border-top: 1px solid var(--vp-c-divider) !important;
+  background: var(--vp-c-bg-soft) !important;
+}
+
+/* ==================== ANIMATIONS ==================== */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.VPFeature {
+  animation: fadeInUp 0.5s ease-out forwards !important;
+}
+
+.VPFeature:nth-child(1) { animation-delay: 0.1s; }
+.VPFeature:nth-child(2) { animation-delay: 0.2s; }
+.VPFeature:nth-child(3) { animation-delay: 0.3s; }
+.VPFeature:nth-child(4) { animation-delay: 0.4s; }
+.VPFeature:nth-child(5) { animation-delay: 0.5s; }
+.VPFeature:nth-child(6) { animation-delay: 0.6s; }
