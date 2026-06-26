@@ -16,20 +16,16 @@ export default defineConfig({
       {
         text: '文章',
         items: [
-          { text: '运维部署', items: [
-            { text: 'Docker', link: '/docker' },
-            { text: 'Nginx', link: '/Nginx' },
-            { text: 'MySQL', link: '/MySql' }
-          ]},
-          { text: '开发框架', items: [
-            { text: 'DRF', link: '/DRF' },
-            { text: 'PyTorch', link: '/pytorch' }
-          ]},
           { text: 'AI 探索', items: [
             { text: 'Qwen 3 本地部署', link: '/本地部署 Qwen 3：用 Ollama 跑 RAG 和 AI 代理的折腾记录' },
             { text: '生成式AI学习笔记', link: '/边学边做：生成式AI应用学习笔记' }
           ]},
-          { text: '嵌入式', items: [
+          { text: '学习笔记', items: [
+            { text: 'Docker', link: '/docker' },
+            { text: 'Nginx', link: '/Nginx' },
+            { text: 'MySQL', link: '/MySql' },
+            { text: 'DRF', link: '/DRF' },
+            { text: 'PyTorch', link: '/pytorch' },
             { text: 'STM32 学习笔记', link: '/Stm32学习笔记' }
           ]}
         ]
@@ -37,45 +33,56 @@ export default defineConfig({
     ],
     sidebar: [
       {
-        text: '运维与部署',
-        items: [
-          { text: 'Docker', link: '/docker' },
-          { text: 'Nginx', link: '/Nginx' },
-          { text: 'MySQL', link: '/MySql' }
-        ]
-      },
-      {
-        text: '开发框架',
-        items: [
-          { text: 'DRF', link: '/DRF' },
-          { text: 'PyTorch', link: '/pytorch' }
-        ]
-      },
-      {
-        text: 'AI 探索',
+        text: '🤖 AI 探索',
         items: [
           { text: 'Qwen 3 本地部署', link: '/本地部署 Qwen 3：用 Ollama 跑 RAG 和 AI 代理的折腾记录' },
           { text: '生成式AI学习笔记', link: '/边学边做：生成式AI应用学习笔记' }
         ]
       },
       {
-        text: '计算机基础',
+        text: '📚 学习笔记',
+        collapsed: false,
         items: [
-          { text: '计算机网络', link: '/计算机网络' },
-          { text: '多进程与多线程', link: '/多进程，多线程' },
-          { text: '找单独的数', link: '/找单独的数' }
-        ]
-      },
-      {
-        text: '嵌入式',
-        items: [
-          { text: 'STM32 学习笔记', link: '/Stm32学习笔记' }
-        ]
-      },
-      {
-        text: '其他',
-        items: [
-          { text: '设计模式', link: '/设计模式' }
+          {
+            text: '运维与部署',
+            collapsed: true,
+            items: [
+              { text: 'Docker', link: '/docker' },
+              { text: 'Nginx', link: '/Nginx' },
+              { text: 'MySQL', link: '/MySql' }
+            ]
+          },
+          {
+            text: '开发框架',
+            collapsed: true,
+            items: [
+              { text: 'DRF', link: '/DRF' },
+              { text: 'PyTorch', link: '/pytorch' }
+            ]
+          },
+          {
+            text: '计算机基础',
+            collapsed: true,
+            items: [
+              { text: '计算机网络', link: '/计算机网络' },
+              { text: '多进程与多线程', link: '/多进程，多线程' },
+              { text: '找单独的数', link: '/找单独的数' }
+            ]
+          },
+          {
+            text: '嵌入式',
+            collapsed: true,
+            items: [
+              { text: 'STM32 学习笔记', link: '/Stm32学习笔记' }
+            ]
+          },
+          {
+            text: '其他',
+            collapsed: true,
+            items: [
+              { text: '设计模式', link: '/设计模式' }
+            ]
+          }
         ]
       }
     ],

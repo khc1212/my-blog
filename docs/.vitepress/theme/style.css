@@ -166,6 +166,29 @@
   padding-top: 8px !important;
 }
 
+/* 子分组缩进 - level-1 子分类 */
+.VPSidebarItem.level-1 {
+  padding-left: 12px !important;
+  border-left: 2px solid var(--vp-c-divider) !important;
+  margin-left: 16px !important;
+}
+
+.VPSidebarItem.level-1 .text {
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  color: var(--vp-c-text-2) !important;
+}
+
+/* level-2 具体链接再缩进 */
+.VPSidebarItem.level-2 {
+  padding-left: 8px !important;
+}
+
+.VPSidebarItem.level-2 .text {
+  font-size: 13px !important;
+  color: var(--vp-c-text-3) !important;
+}
+
 /* ==================== CONTENT ==================== */
 .vp-doc h1 {
   font-size: 32px !important;
