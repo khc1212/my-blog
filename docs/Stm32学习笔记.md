@@ -2092,27 +2092,31 @@ const 是定义的常量是存储在Flash里的
 计算机主要由，运算器、控制器、存储器、输入设备、和输出设备。其中运算器和控制器一般会合在一起，叫做CPU。计算机的核心关键部分就是cpu和存储器
 
 <table>
-    <tr>
-        <th>类型</th><th>起始地址</th><th>存储器</th><th>用途</th>
-    </tr>
-    <tr>
-        <td rowspan="3">ROM</td><td>0x0800 0000</td><td>程序存储器Flash</td><td>存储C语言编译后的代码</td>
-    </tr>
-    <tr>
-        <td>0x1FFF F000</td><td>系统存储器</td><td>存储BootLoader，用于串口下载</td>
-    </tr>
-    <tr>
-        <td>0x1FFF F800</td><td>选项字节</td><td>存储一些独立于程序代码的配置参数</td>
-    </tr>
-     <tr>
-        <td rowspan="3">RAM</td><td>0x2000 0000</td><td>运行内存SRAM</td><td>存储程序运行过程中的临时变量</td>
-    </tr>
-    <tr>
-        <td>0x4000 0000</td><td>外设寄存器</td><td>存储各个外设的配置参数</td>
-    </tr>
-    <tr>
-        <td>0xE000 0000</td><td>内核外设寄存器</td><td>存储内核各个外设的配置参数</td>
-    </tr>
+    <thead>
+        <tr>
+            <th>类型</th><th>起始地址</th><th>存储器</th><th>用途</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan="3">ROM</td><td>0x0800 0000</td><td>程序存储器Flash</td><td>存储C语言编译后的代码</td>
+        </tr>
+        <tr>
+            <td>0x1FFF F000</td><td>系统存储器</td><td>存储BootLoader，用于串口下载</td>
+        </tr>
+        <tr>
+            <td>0x1FFF F800</td><td>选项字节</td><td>存储一些独立于程序代码的配置参数</td>
+        </tr>
+        <tr>
+            <td rowspan="3">RAM</td><td>0x2000 0000</td><td>运行内存SRAM</td><td>存储程序运行过程中的临时变量</td>
+        </tr>
+        <tr>
+            <td>0x4000 0000</td><td>外设寄存器</td><td>存储各个外设的配置参数</td>
+        </tr>
+        <tr>
+            <td>0xE000 0000</td><td>内核外设寄存器</td><td>存储内核各个外设的配置参数</td>
+        </tr>
+    </tbody>
 </table>
 
 

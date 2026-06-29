@@ -24,8 +24,10 @@ export default defineConfig({
             { text: '接口性能优化', link: '/接口性能优化：从2秒到200毫秒' }
           ]},
           { text: 'AI 探索', items: [
+            { text: '自研 DataCopilot 实战', link: '/自研DataCopilot：从LangChain踩坑到全栈AI Agent实战' },
             { text: 'Qwen 3 本地部署与 RAG', link: '/Qwen 3 本地部署与 RAG 实践' },
-            { text: '生成式AI学习笔记', link: '/边学边做：生成式AI应用学习笔记' }
+            { text: '生成式AI学习笔记', link: '/边学边做：生成式AI应用学习笔记' },
+            { text: 'NAO开源项目深度解析', link: '/NAO开源项目深度解析：AI Agent架构设计与实践' }
           ]},
           { text: '学习笔记', items: [
             { text: 'Docker', link: '/docker' },
@@ -55,8 +57,10 @@ export default defineConfig({
       {
         text: '🤖 AI 探索',
         items: [
+          { text: '自研 DataCopilot 实战', link: '/自研DataCopilot：从LangChain踩坑到全栈AI Agent实战' },
           { text: 'Qwen 3 本地部署与 RAG', link: '/Qwen 3 本地部署与 RAG 实践' },
-          { text: '生成式AI学习笔记', link: '/边学边做：生成式AI应用学习笔记' }
+          { text: '生成式AI学习笔记', link: '/边学边做：生成式AI应用学习笔记' },
+          { text: 'NAO开源项目深度解析', link: '/NAO开源项目深度解析：AI Agent架构设计与实践' }
         ]
       },
       {

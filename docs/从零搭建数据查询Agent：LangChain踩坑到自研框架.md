@@ -103,3 +103,5 @@ LangChain 的 Agent 加载工具函数时，会把所有工具的描述都塞到
 4. **RAG 是本地部署的刚需**：没有联网能力，业务知识只能靠 RAG 注入
 
 > 相关笔记：[Qwen 3 本地部署与 RAG 实践](/Qwen 3 本地部署与 RAG 实践) 记录了本地部署大模型和 RAG 的具体过程。
+>
+> 后来离职后，自己从零写了一个不依赖 LangChain 的全栈 AI Agent 项目 DataCopilot，详见 [自研 DataCopilot：从 LangChain 踩坑到全栈 AI Agent 实战](/自研DataCopilot：从LangChain踩坑到全栈AI Agent实战)。
