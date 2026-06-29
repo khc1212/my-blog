@@ -4,38 +4,37 @@ layout: home
 hero:
   name: "My Blog"
   text: 个人技术笔记
-  tagline: 记录学习路上的点点滴滴 · Docker · Python · AI · 计算机基础
+  tagline: >
+    后端开发工程师，主要做 Java / Python 后端和 AI 应用开发，
+    有制造业 MES 系统实战经验。这里记录工作中的踩坑复盘和技术学习笔记。
   image:
     src: /logo.svg
     alt: logo
   actions:
     - theme: brand
       text: 开始阅读 →
-      link: /docker
+      link: /自研DataCopilot：从LangChain踩坑到全栈AI Agent实战
     - theme: alt
-      text: GitHub
-      link: https://github.com/khc1212/my-blog
+      text: 关于我 →
+      link: /about
 
 features:
   - icon: 🔧
     title: 踩坑复盘
     details: 线上问题排查实战，从现象到根因的真实记录
   - icon: 🤖
-    title: AI 探索
-    details: 大模型本地部署、RAG 检索增强生成、生成式 AI 应用开发
+    title: AI 应用
+    details: 大模型本地部署、RAG 检索增强生成、NL2SQL Agent 开发
+  - icon: 🏭
+    title: 工业物联网
+    details: MES 系统开发、MQTT/Modbus 协议对接、设备数据采集
   - icon: 🐳
-    title: 容器与部署
-    details: Docker 容器化技术，从基础命令到生产环境部署实践
-  - icon: 🌐
-    title: Web 服务
-    details: Nginx 反向代理、负载均衡，MySQL 数据库管理
-  - icon: 🔧
     title: 后端开发
-    details: Django REST Framework 构建 RESTful API，PyTorch 深度学习
+    details: Java / Python 后端开发，Spring Boot、Django、RESTful API
   - icon: 📡
-    title: 计算机基础
-    details: TCP/IP 协议栈、HTTP/HTTPS、网络编程、并发编程
-  - icon: 📟
-    title: 嵌入式
-    details: STM32 学习笔记，嵌入式开发入门
+    title: 数据库
+    details: MySQL 索引优化、复杂 SQL 调优、Redis 缓存实战
+  - icon: 📚
+    title: 学习笔记
+    details: Docker、Nginx、设计模式、计算机基础等日常积累
 ---

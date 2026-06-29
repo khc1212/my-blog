@@ -1,3 +1,8 @@
+---
+title: 自研 DataCopilot 实战
+description: 从 LangChain 踩坑到全栈 AI Agent 实战，自研数据查询助手的完整历程
+---
+
 # 自研 DataCopilot：从 LangChain 踩坑到全栈 AI Agent 实战
 
 ## 背景

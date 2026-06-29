@@ -1,3 +1,8 @@
+---
+title: MQTT 协议基础
+description: MQTT 轻量级消息协议详解，发布订阅模式、QoS、Topic 设计
+---
+
 ## 什么是 MQTT
 
 MQTT（Message Queuing Telemetry Transport）是一种**轻量级的发布/订阅消息协议**，专为物联网和弱网络环境设计。

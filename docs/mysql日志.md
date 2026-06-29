@@ -1,3 +1,8 @@
+---
+title: MySQL 日志
+description: MySQL 日志系统详解，redo log、undo log、binlog 核心原理
+---
+
 ## 为什么 MySQL 需要日志？
 
 MySQL 的日志系统是它**高可靠性的基石**。简单来说，日志解决了三个核心问题：

@@ -1,3 +1,8 @@
+---
+title: MySQL 基础
+description: MySQL 数据库基础知识，从 SQL 语法到数据库管理
+---
+
 # 初识sql
 ---
 

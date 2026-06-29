@@ -1,3 +1,8 @@
+---
+title: STM32 学习笔记
+description: STM32 嵌入式开发入门，引脚定义、外设配置学习笔记
+---
+
 <a id="sheet"></a>
 <!-- [跳转到第一节](#sheet) -->
 

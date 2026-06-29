@@ -1,3 +1,8 @@
+---
+title: MQTT 数据丢失排查
+description: 400 台设备 ClientID 冲突导致数据丢失的排查与解决
+---
+
 # MQTT 数据丢失排查：400 台设备的 Client ID 冲突
 
 ## 背景

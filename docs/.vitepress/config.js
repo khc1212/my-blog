@@ -7,12 +7,13 @@ export default defineConfig({
   lang: 'zh-CN',
   lastUpdated: true,
   head: [
-    ['link', { rel: 'icon', href: '/favicon.ico' }],
+    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/logo.svg' }],
     ['meta', { name: 'theme-color', content: '#667eea' }]
   ],
   themeConfig: {
     nav: [
       { text: '首页', link: '/' },
+      { text: '关于', link: '/about' },
       {
         text: '文章',
         items: [

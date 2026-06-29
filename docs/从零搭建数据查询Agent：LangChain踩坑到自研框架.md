@@ -1,3 +1,8 @@
+---
+title: 从零搭建数据查询 Agent
+description: LangChain 踩坑到自研框架，用自然语言查询业务数据的完整实战
+---
+
 # 从零搭建数据查询 Agent：LangChain 踩坑到自研框架
 
 ## 背景
